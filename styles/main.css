@@ -171,7 +171,6 @@ a {
 }
 
 .icon-social {
-    height: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -426,6 +425,10 @@ header {
     border-top-left-radius: unset;
     border-top-right-radius: unset;
     font-weight: lighter;
+}
+
+.it-icon {
+    height: 40px;
 }
 
 @media (max-width: 1650px) {
