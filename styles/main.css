@@ -354,6 +354,9 @@ header {
 .form-control {
     border-radius: 0;
     padding: 16px;
+    background : #EEEEEE;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
 .form-control::placeholder {
@@ -518,6 +521,17 @@ header {
     top: 100px;
     z-index: 1020;
 }
+.row-line::before{
+    position: absolute;
+    content: '';
+    height: 80%;
+    width: 1px;
+    background: #c1c1c1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -584,6 +598,13 @@ header {
         position: static;
         top: unset;
         z-index: unset;
+    }
+    .row-line::before{
+        top: 50%;
+        left: 50%;
+        height: 1px;
+        width: 80%;
+        transform: translate(-50%,-50%);
     }
 }
 
