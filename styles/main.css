@@ -440,7 +440,7 @@ header {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 10;
+        z-index: 99999;
         transition: background-color 0.6s ease;
         font-size: 14px;
         color: white !important;
@@ -509,7 +509,15 @@ header {
   
     object-fit: contain;
   }
-  
+.icon-size-sm{
+    height: 50px;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    z-index: 1020;
+}
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -570,6 +578,12 @@ header {
     }
     .h-lg-100vh{
         height: 660px;
+    }
+    .sticky-top {
+        position: unset;
+        position: static;
+        top: unset;
+        z-index: unset;
     }
 }
 
