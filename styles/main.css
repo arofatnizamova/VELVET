@@ -531,6 +531,113 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+/* Сам accordion */
+.accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: #e5e5e5;
+    --bs-accordion-border-width: 1px;
+    --bs-accordion-border-radius: 0;
+
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-btn-color: #262626;
+
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-active-color: #262626;
+
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+
+/* Один элемент */
+.accordion-item {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Верхняя линия первого элемента */
+.accordion-item:first-child {
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* Кнопка / вопрос */
+.accordion-button {
+    padding: 15px 0;
+
+    background: transparent;
+
+    color: #262626;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    box-shadow: none;
+
+    transition: color 0.2s ease;
+}
+
+
+/* Открытый accordion */
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    color: #262626;
+
+    box-shadow: none;
+
+    padding-bottom: 12px;
+}
+
+
+/* Убираем bootstrap-иконку */
+.accordion-button::after {
+    background-image: none !important;
+
+    width: 8px;
+    height: 8px;
+
+    margin-left: auto;
+    margin-right: 3px;
+
+    border-right: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+
+    transform: rotate(45deg);
+
+    transition: transform 0.25s ease;
+}
+
+
+/* Стрелка вверх при открытии */
+.accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+
+    transform: rotate(-135deg);
+}
+
+
+/* Контент */
+.accordion-body {
+    padding: 0 0 14px;
+
+    color: #a4a4a4;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* Убираем обводку при клике */
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
+/* Hover при необходимости */
+.accordion-button:hover {
+    color: #000;
+}
 
   @keyframes marquee {
     from {
