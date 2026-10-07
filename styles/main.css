@@ -60,9 +60,11 @@ a {
 .bg-corp {
     background: var(--color-corp);
 }
-.bg-main{
+
+.bg-main {
     background: #F4F4F4;
 }
+
 .bg-dark-gray {
     background: #F3F4F6;
 }
@@ -354,7 +356,7 @@ header {
 .form-control {
     border-radius: 0;
     padding: 16px;
-    background : #EEEEEE;
+    background: #EEEEEE;
     border: none;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
 }
@@ -416,9 +418,11 @@ header {
 .h-lg-100 {
     height: 100%;
 }
-.h-lg-100vh{
+
+.h-lg-100vh {
     height: 100vh;
 }
+
 .item-tab.nav-tabs .nav-link.active {
     border: none;
     border-bottom: 2px solid var(--color-corp);
@@ -438,99 +442,112 @@ header {
 .it-icon {
     height: 40px;
 }
-.header-dark{
-        background: transparent;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 99999;
-        transition: background-color 0.6s ease;
-        font-size: 14px;
-        color: white !important;
-        border: none !important;
+
+.header-dark {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: background-color 0.6s ease;
+    font-size: 14px;
+    color: white !important;
+    border: none !important;
 }
-.header-dark .navbar-collapse.collapse.show,.header-dark .navbar-collapse.collapsing {
+
+.header-dark .navbar-collapse.collapse.show,
+.header-dark .navbar-collapse.collapsing {
     background: black !important;
     padding: 20px 0px 20px 10px;
 }
+
 .header-dark.scrolled {
     background: black;
     backdrop-filter: blur(8px);
 }
-.header-dark .nav-link,.header-dark .dropdown button,.header-dark .icons-circle{
+
+.header-dark .nav-link,
+.header-dark .dropdown button,
+.header-dark .icons-circle {
     color: white !important;
 }
-.pt-custom{
+
+.pt-custom {
     padding-top: 80px;
 }
+
 .logos-section {
     width: 100%;
     overflow: hidden;
-  
+
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
-  
-  .marquee {
+}
+
+.marquee {
     width: 100%;
     overflow: hidden;
-  }
-  
-  .marquee-track {
+}
+
+.marquee-track {
     display: flex;
     gap: 20px;
     width: max-content;
-  
+
     animation: marquee 25s linear infinite;
     will-change: transform;
-  }
-  
-  .marquee-track-reverse {
+}
+
+.marquee-track-reverse {
     animation-direction: reverse;
-  }
-  
-  .logo-card {
+}
+
+.logo-card {
     width: 130px;
     height: 70px;
-  
+
     flex: 0 0 auto;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
     background: rgba(190, 190, 195, 0.55);
-  }
-  
-  .logo-card img {
+}
+
+.logo-card img {
     max-width: 90px;
     max-height: 42px;
-  
+
     width: auto;
     height: auto;
-  
+
     object-fit: contain;
-  }
-.icon-size-sm{
+}
+
+.icon-size-sm {
     height: 50px;
 }
+
 .sticky-top {
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
     z-index: 1020;
 }
-.row-line::before{
+
+.row-line::before {
     position: absolute;
     content: '';
-    height: 80%;
+    height: 90%;
     width: 1px;
     background: #c1c1c1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 /* Сам accordion */
 .accordion {
     --bs-accordion-bg: transparent;
@@ -638,12 +655,13 @@ header {
 .accordion-button:hover {
     color: #000;
 }
+
 .packages-table {
     min-width: 950px;
     color: #242424;
 }
 
-.packages-table > :not(caption) > * > * {
+.packages-table> :not(caption)>*>* {
     background-color: transparent;
     box-shadow: none;
 }
@@ -733,6 +751,9 @@ header {
     background-color: #d9d9d9;
 }
 
+.company-logo {
+    height: 80px;
+}
 
 /* mobile */
 
@@ -750,15 +771,17 @@ header {
         padding: 14px 10px 24px;
     }
 }
-  @keyframes marquee {
+
+@keyframes marquee {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  
+
     to {
-      transform: translateX(calc(-50% - 10px));
+        transform: translateX(calc(-50% - 10px));
     }
-  }
+}
+
 @media (max-width: 1650px) {
     .logo-xl {
         width: 200px;
@@ -808,21 +831,24 @@ header {
         align-items: start;
         border: none;
     }
-    .h-lg-100vh{
+
+    .h-lg-100vh {
         height: 660px;
     }
+
     .sticky-top {
         position: unset;
         position: static;
         top: unset;
         z-index: unset;
     }
-    .row-line::before{
+
+    .row-line::before {
         top: 50%;
         left: 50%;
         height: 1px;
         width: 80%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
