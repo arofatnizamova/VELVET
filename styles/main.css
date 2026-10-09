@@ -188,6 +188,16 @@ a {
 
 header {
     border-bottom: 0.5px solid #9ca3af69;
+    background: transparent;
+    position: fixed;
+    z-index: 99999;
+    transition: background-color 0.6s ease;
+    top: 0;
+    width: 100%;
+}
+
+main>section:first-of-type {
+    padding-top: 80px !important;
 }
 
 .underline-link {
@@ -444,15 +454,22 @@ header {
 }
 
 .header-dark {
-    background: transparent;
-    position: fixed;
-    top: 0;
+
     width: 100%;
-    z-index: 99999;
-    transition: background-color 0.6s ease;
     font-size: 14px;
     color: white !important;
     border: none !important;
+}
+
+.header-light.scrolled {
+    background: white;
+    backdrop-filter: blur(8px);
+}
+
+.header-light .navbar-collapse.collapse.show,
+.header-light .navbar-collapse.collapsing {
+    background: white !important;
+    padding: 20px 0px 20px 10px;
 }
 
 .header-dark .navbar-collapse.collapse.show,
